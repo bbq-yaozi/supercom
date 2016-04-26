@@ -13,10 +13,13 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void encode(char *str);//编码
+    void decode(char *str);//解码
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H
